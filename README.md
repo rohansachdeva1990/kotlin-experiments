@@ -1,2 +1,0 @@
-# kotlin-experiments
-Kotlin Playground
