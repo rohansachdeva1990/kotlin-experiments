@@ -77,6 +77,7 @@
         - But, the concept of static is still there       
         - Syntactically its not there
     - No "new" keyword
+    - "Any" is very similar to Object class in Java, but not same
     
 - Equality
     - In Java, "==" checks references. But in Kotlin "==" checks both structural equality and references
@@ -84,3 +85,34 @@
     - "!="
     = "!=="
     - [Source](src/main/kotlin/com/rohan/kotlin/Equality.kt)
+    
+- Bit Operators and Smart Casting
+    - Rather than using "| & ^" we use "or, and, xor"
+    - There is no "instanceof"
+        - It equivalent is "is"
+        - not is =. !is
+    - Casting using "as"
+    - Smart casting is only maintained if you don't change the type in current context.
+    - [Bit Source](src/main/kotlin/com/rohan/kotlin/BitOperator.kt)
+    - [Casting Source](src/main/kotlin/com/rohan/kotlin/Casting.kt)
+
+- String Template
+    - overriding the toString
+    - escape "$" by "\$"
+    - Use substitution instead of concatenation
+    - Substitute expression using ${expression}
+    - inspired from javascript ES
+    - [Source](src/main/kotlin/com/rohan/kotlin/StringTemplate.kt)
+    
+- Raw Strings
+    - triple quoted string
+    - no need to include escape
+    - trimMargin
+    - [Source](src/main/kotlin/com/rohan/kotlin/RawStrings.kt)
+    
+- The Kotlin REPL
+    - Read Eval Print Loop
+    - Tools -> Kotlin -> Kotlin REPL
+    - A console for Kotlin => JShell
+    
+### Basic differences between Kotlin and Java
