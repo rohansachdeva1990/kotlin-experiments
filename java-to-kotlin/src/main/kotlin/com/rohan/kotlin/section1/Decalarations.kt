@@ -1,4 +1,4 @@
-package com.rohan.kotlin
+package com.rohan.kotlin.section1
 
 /**
  * Variable Declarations

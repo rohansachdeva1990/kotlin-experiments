@@ -1,6 +1,8 @@
 # Java to Kotlin
 
-### What is Kotlin
+### Section 0: Introduction To Kotlin
+
+#### What is Kotlin
 - Runs anywhere the JVM can run
 - Statically typed
     - type of every expression is determined at compile time
@@ -8,9 +10,9 @@
 - Its object oriented
 - Functional Programming
 
-### Guiding Principle
+#### Guiding Principle
 - Conciseness
-    - Little code we need to write as oppose to java
+    - Less boilerplate code
 - Safety 
     - Difficult to generate NPE
 - Pragmatic
@@ -20,7 +22,7 @@
 - Interoperability
     - Was designed to be interoperable with java
     
-### Basic differences between Kotlin and Java
+### Section 1: Basic differences between Kotlin and Java
 
 - The Kotlin Standard Library
     - https://kotlinlang.org/api/latest/jvm/stdlib/
@@ -47,13 +49,13 @@
         - Mutable
     - Good practice to use val to promise immutablity
     - Type is fixed at declaration time
-    - [Source](src/main/kotlin/com/rohan/kotlin/Decalarations.kt)
+    - [Source](src/main/kotlin/com/rohan/kotlin/section1/Decalarations.kt)
     
 - Type Aliases
     - Aliases of existing data type
     - Always declared at the top
     - Eg. StringBuilder in Kotlin refers to java.lang.StringBuilder
-    - [Source](src/main/kotlin/com/rohan/kotlin/TypeAliases.kt)
+    - [Source](src/main/kotlin/com/rohan/kotlin/section1/TypeAliases.kt)
     
 - Quick Difference
     - No Semicolon (Optional)
@@ -84,7 +86,7 @@
     - To check referential equality we use "==="
     - "!="
     = "!=="
-    - [Source](src/main/kotlin/com/rohan/kotlin/Equality.kt)
+    - [Source](src/main/kotlin/com/rohan/kotlin/section1/Equality.kt)
     
 - Bit Operators and Smart Casting
     - Rather than using "| & ^" we use "or, and, xor"
@@ -93,8 +95,8 @@
         - not is =. !is
     - Casting using "as"
     - Smart casting is only maintained if you don't change the type in current context.
-    - [Bit Source](src/main/kotlin/com/rohan/kotlin/BitOperator.kt)
-    - [Casting Source](src/main/kotlin/com/rohan/kotlin/Casting.kt)
+    - [Bit Source](src/main/kotlin/com/rohan/kotlin/section1/BitOperator.kt)
+    - [Casting Source](src/main/kotlin/com/rohan/kotlin/section1/Casting.kt)
 
 - String Template
     - overriding the toString
@@ -102,17 +104,117 @@
     - Use substitution instead of concatenation
     - Substitute expression using ${expression}
     - inspired from javascript ES
-    - [Source](src/main/kotlin/com/rohan/kotlin/StringTemplate.kt)
+    - [Source](src/main/kotlin/com/rohan/kotlin/section1/StringTemplate.kt)
     
 - Raw Strings
     - triple quoted string
     - no need to include escape
     - trimMargin
-    - [Source](src/main/kotlin/com/rohan/kotlin/RawStrings.kt)
+    - [Source](src/main/kotlin/com/rohan/kotlin/section1/RawStrings.kt)
     
 - The Kotlin REPL
     - Read Eval Print Loop
     - Tools -> Kotlin -> Kotlin REPL
     - A console for Kotlin => JShell
     
-### Basic differences between Kotlin and Java
+### Section 2: Data Types and Null Reference Handling
+
+- The Builtin Datatypes in Kotlin
+
+- Arrays in Kotlin
+
+- Null References in Kotlin
+
+- Arrays and Null References
+
+
+### Section 3: OO and Kotlin: Classes, Functions, Inheritance
+
+- Kotlin's Access Modifiers
+
+- Declaring Classes and Using Constructors in Kotlin
+
+- Properties and Backing Fields in Kotlin
+
+- Constants and Data Classes
+
+- Kotlin Function Basics
+
+- Extension Functions
+
+- Inline Functions
+
+- Inheritance in Kotlin
+
+- Interfaces in Kotlin
+
+- Singletons in Kotlin
+
+- Companion Objects in Kotlin
+
+- Enums in Kotlin
+
+- Imports in Kotlin
+
+- The Internal Access Modifier
+
+### Section 4: Loops, and the If, When and Try/Catch Expressions
+
+- The For Loop
+
+- The If Expression
+
+- The When Expression
+
+- The Try/Catch Expression
+
+### Section 5: Lambda Expressions, Collections, and Generics
+
+- Lambda Expression Basics
+
+- Lambdas With Receivers
+
+- Lists
+
+- Kotlin Collections Functions
+
+- Maps and Destructuring Declarations
+
+- Sets in Kotlin
+
+- More Collections Functions in Kotlin
+
+- Sequences in Kotlin
+
+- Generics in Kotlin
+
+    - Functions and Erasure
+    
+    - Reified Parameters in Kotlin
+    
+    - Covariance
+    
+    - Contra-variance
+    
+    - Use-Site Variance
+
+### Section 6: File I/O
+
+- Reading Text Files
+
+- Reading Binary Files
+
+- Try with Resources
+
+- Walking the File Tree
+
+### Section 7: Java Interoperability
+
+- Nullability when using Java from Kotlin
+
+- Calling Java from Kotlin
+
+- Calling Kotlin Functions from Java
+
+- Annotations when calling Kotlin from Java
+

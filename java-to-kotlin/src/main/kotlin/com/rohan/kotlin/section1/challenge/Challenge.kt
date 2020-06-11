@@ -1,4 +1,4 @@
-package com.rohan.kotlin.challenge1
+package com.rohan.kotlin.section1.challenge
 
 fun main(args: Array<String>) {
 

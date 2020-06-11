@@ -1,4 +1,4 @@
-package com.rohan.kotlin
+package com.rohan.kotlin.section1
 
 /**
  * This function is outside the class. Kotlin will run this function as it is.
