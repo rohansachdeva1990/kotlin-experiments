@@ -32,8 +32,12 @@ Java to Kotlin
     - A solution can be solved in many ways using kotlin
     - you can be as concise or more verbose
 - Interoperability
-    - Was designed to be interoperable with java
-    
+    - Designed to be interoperable with java
+
+#### How it works
+- Runs on JVM
+- Kotlin code is converted to .class to run on JVM
+
 #### Development Environment
 - Intellij
 - Java 8    
@@ -179,14 +183,37 @@ Java to Kotlin
     - "==" is a safe operator for null check as it is checking structural equality
     - Arrays and Null References
         - Array of nulls
-        
     - [Source](src/main/kotlin/com/rohan/kotlin/section2/NullReferences.kt)
 
 ### [[↑]](#toc) <a name='section_3'>Section 3: OO and Kotlin: Classes, Functions, Inheritance</a>
 
 - Kotlin's Access Modifiers
+    - We can have a class, a function and properties defined at top level in kotlin file
+    - If you don't specify access modifier its public by default
+        - In Java, its package-private
+    - In single kotlin you can have multiple public classes in same file
+    - There can be a private class as opposed to java where you can only have nested private classes
+    - 4 access modifiers:-
+        | Access Modifier | Kotlin                         | Java               |
+        |-----------------|--------------------------------|--------------------|
+        | private         | Visible within the same file   | Can't be used      |
+        | protected       | Can't be used                  | Can't be used      |
+        | public          | Visible everywhere             | Visible everywhere |
+        | internal        | Visible within the same module | NA                 |
+    - Conceptually, private, public and protected are same as Java. Internal is discussed later
+    - In Kotlin, classes can't see private members belonging to inner classes
+    - "internal" gets compiled to public under the cover. So any java code can access it.
+        -  happens when we mix java and kotlin  
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/AccessModifiers.kt)
 
 - Declaring Classes and Using Constructors in Kotlin
+    - In Kotlin, all classes are public and final by default
+    - Primary constructors
+    - Init block
+    - Secondary constructors
+        - Do not declare properties, only primary does
+    - Use default parameter values to cut down the number of constructors
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/DeclaringClasses.kt)
 
 - Properties and Backing Fields in Kotlin
 
