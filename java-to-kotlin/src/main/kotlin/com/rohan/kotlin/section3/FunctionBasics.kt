@@ -1,2 +1,5 @@
 package com.rohan.kotlin.section3
 
+fun main(args: Array<String>) {
+
+}
