@@ -11,7 +11,7 @@ Java to Kotlin
   6. [Lambda Expressions, Collections, and Generics](#section_5)
   7. [File I/O](#section_6)
   8. [Java Interoperability](#section_7)
-  9. [Summary] (#summary)
+  9. [Summary & Examples](#summary)
 
 ### [[↑]](#toc) <a name='section_0'>Introduction To Kotlin</a>
 
@@ -240,12 +240,32 @@ Java to Kotlin
    - [Source](src/main/kotlin/com/rohan/kotlin/section3/ConstantsAndDataClass.kt)
         
 - Kotlin Function Basics
-   -
+   - Default return type is Unit (Eg. main)
+   - Function with block body will have curly braces
+   - Function with expression body will have no braces and return
+    - return type should match for the variable and the expression result
+   - Named arguments
+   - Varargs 
+   - spread operator
+    - unpacks the array and pass the element individually to a function
    - [Source](src/main/kotlin/com/rohan/kotlin/section3/FunctionBasics.kt)
 
 - Extension Functions
-
+    - Are just syntactic sugar.
+    - They are just an illusion nothing more
+    - Adding functions to predefined classes.
+        - It is just an illusion that we add to the exisiting class
+        - We are not playing with the internal implementation. 
+        - Encapsulation preserved
+    - Indirectly acting on the target object 
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/ExtensionFunctions.kt)
+    
 - Inline Functions
+    - When inline function is compiled its body is directly substituted in function call
+    - Done while lambda (Recommended)
+    - Concept similar to c++
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/InlineFunctions.kt)
+
 
 - Inheritance in Kotlin
 
@@ -384,6 +404,7 @@ Java to Kotlin
 ```
 
 #### Section 2
+
 ```kotlin
     //-----------------------------------------------------------------------------
     // 1. Declare a non-nullable float variable two ways, and
