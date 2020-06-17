@@ -293,12 +293,24 @@ Java to Kotlin
     - [Source](src/main/kotlin/com/rohan/kotlin/section3/InheritanceInKotlin.kt)                
                 
 - Interfaces in Kotlin
-
+    - interface
+    - can have property
+        - abstract
+        - concrete using get() - similar to default in Java
+    - properties does not have backing field
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/InterfacesInKotlin.kt)
+   
 - Singletons in Kotlin
-
+    - "object"
+        - A special keyword reserved for singletons in Kotlin
+    - Similar to Java
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/SingletonsInKotlin.kt)
+    
 - Companion Objects in Kotlin
 
 - Enums in Kotlin
+    - Similar to java
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/EnumsInKotlin.kt)
 
 - Imports in Kotlin
 
