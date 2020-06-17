@@ -265,10 +265,33 @@ Java to Kotlin
     - Done while lambda (Recommended)
     - Concept similar to c++
     - [Source](src/main/kotlin/com/rohan/kotlin/section3/InlineFunctions.kt)
-
-
+    
 - Inheritance in Kotlin
-
+    - open
+        - Every class is public final. final classes cannot be extended. 
+            - Enable the extension using "open"
+        - Makes function and class extensible
+    - abstract 
+        - Same as java
+        - open by default
+        - applied on both class and function
+    - override
+        - functions are final by default
+            - So cannot be overridden
+            - Enable it by:
+                - Adding "open" to parent level function
+                - Adding "override" to child level function
+        - It is optional as in java. Must be specified.
+        - override enables "open" feature by default for subsequent inherited classes
+    - final
+        - to disable the "open"-ness of an overridden function
+    - constructors
+        - we cannot call super secondary constructor from the child primary constructor
+        - we can only call super secondary constructor using child secondary constructor
+    - data class cannot be extended - so open, abstract won't work. Although they can be extended
+        - AVOID USING INHERITANCE WITH DATA CLASS
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/InheritanceInKotlin.kt)                
+                
 - Interfaces in Kotlin
 
 - Singletons in Kotlin
