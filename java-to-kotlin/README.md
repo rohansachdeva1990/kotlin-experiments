@@ -307,6 +307,27 @@ Java to Kotlin
     - [Source](src/main/kotlin/com/rohan/kotlin/section3/SingletonsInKotlin.kt)
     
 - Companion Objects in Kotlin
+    - Static keyword does not exist in Kotlin
+        - We can't declare anything static
+        - Instead, we can use top level functions and objects
+    - You can think like every object within companion object is static.
+    - You can give your companion objects a name
+    - Use
+        - Grouping static like method in companion objects (Similar to Java) and accessing them without creating an Object
+        - Call private constructors or Factory pattern
+            - make primary constructor private using
+                - add private constructor in class declaration
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/CompanionObjects.kt)
+    
+- Anonymous Classes
+    - Another use of companion objects
+    - Also known as object expressions
+    - using 
+        - func(object: SomeInterface { override fun mustImplement(): String = "Hello"})
+            - Here the object created is not singleton
+            - The object is discarded after use
+    - we can update mutable objects in anonymous objects
+    - [Source](src/main/kotlin/com/rohan/kotlin/section3/AnonymousObjects.kt)
 
 - Enums in Kotlin
     - Similar to java
